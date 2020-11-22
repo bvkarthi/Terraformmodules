@@ -1,3 +1,3 @@
 # Terraformmodules
 
-Terraform test module screation
+Terraform test module creation
