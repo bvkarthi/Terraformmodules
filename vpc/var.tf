@@ -61,10 +61,6 @@ variable "create_igw" {
   
 }
 
-variable "vpc_id" {
-  description = "Name of the VPC"
-  
-}
 
 variable "public_subnets" {
   type = list (string)
