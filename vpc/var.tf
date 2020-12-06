@@ -3,10 +3,6 @@ variable "cidr" {
   type = string
 }
 
-variable "instance_tenancy" {
-  description = "Teanancy value"
-  default = "shared"
-}
 
 variable "enable_dns_hostnames" {
   description = "dns hostname for vpc"
