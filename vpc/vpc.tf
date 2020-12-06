@@ -13,8 +13,7 @@ resource "aws_vpc" "this" {
     {
       "Name" = format("%s", var.name)
     },
-    var.tags,
-    var.vpc_tags,
+    var.tags
   )
 }
 
@@ -29,8 +28,7 @@ resource "aws_internet_gateway" "this" {
     {
       "Name" = format("%s", var.name)
     },
-    var.tags,
-    var.igw_tags,
+    var.tags
   )
 }
 

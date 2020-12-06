@@ -32,7 +32,12 @@ variable "enable_classiclink_dns_support" {
   
 }
 
-variable "tags_vpc" {
+variable "name" {
+  description = "resource name"
+  
+}
+
+variable "tags" {
   type = map (string)
   default = {
     
@@ -42,15 +47,22 @@ variable "tags_vpc" {
 }
 
 variable "create_vpc" {
+  description = "deploy new vpc"
   type = bool
   default = true
   
 }
 
 
-variable "create_gateway" {
+variable "create_igw" {
+  description = "create new igw"
   type = bool
   default = true
+  
+}
+
+variable "vpc_id" {
+  description = "Name of the VPC"
   
 }
 
@@ -61,11 +73,7 @@ variable "public_subnets" {
   
 }
 
-variable "igw_tags" {
-  type = map (string)
-  default = {
 
-  }
 
   
-}
+
