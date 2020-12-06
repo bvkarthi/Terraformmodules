@@ -69,7 +69,3 @@ variable "igw_tags" {
 
   
 }
-
-variable "create_egress_only_igw" {
-  
-}
