@@ -59,12 +59,45 @@ variable "create_igw" {
 
 
 variable "public_subnets" {
+  description = "to create poublic subnet for igw"
   type = list (string)
   default = []
 
   
 }
 
+variable "azs" {
+  description = "availability zone"
+  type = list (string)
+  
+}
+
+
+variable "map_public_ip_on_launch" {
+  description = "assign public ip for ec2 instance"
+  type = bool
+  default = true
+}
+
+
+variable "private_subnets" {
+  description = "create private subnet"
+  type = list (string)
+  default = []
+  
+}
+
+variable "public_subnet_suffix" {
+description = "Suffix to append to public subnets name"
+default = "public"
+}
+
+
+variable "private_subnet_suffix" {
+  description = "suffix to append to private subnets name"
+  default = "private"
+  
+}
 
 
   
